@@ -393,7 +393,7 @@ def api__last_difficulty():
                                   'error': 'none'}), 200)
 
 
-@application.get("/api/mempool")
+@application.get("/api/mempool/")
 def api__mempool():
     try:
         the_mempool = cryptocurrency.getrawmempool(True)
